@@ -1,5 +1,6 @@
 package com.lei.tang.sericefeign.feign;
 
+import com.lei.tang.sericefeign.hystrix.SchedualServiceHiHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * <p>
  * 通过@FeignClient("服务名")来指定调用哪个服务
  */
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service-hi", fallback = SchedualServiceHiHystrix.class)
 public interface SchedualServiceHi {
 
     @GetMapping(value = "/hi")

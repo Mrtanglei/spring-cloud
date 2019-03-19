@@ -7,3 +7,7 @@ eureka:
 spring:
   application:
     name: service-feign
+#开启Feign熔断能力
+feign:
+  hystrix:
+    enabled: true

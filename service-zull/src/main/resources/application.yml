@@ -1,0 +1,24 @@
+##########################
+#这部分和普通服务是一致的
+server:
+  port: 4444
+spring:
+  application:
+    name: zuul-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+##########################
+#注册路由
+zuul:
+  routes:
+    #路由id
+    api-ribbon:
+      #请求路径
+      path: /api/ribbon/**
+      #服务派发，指定服务需在注册中心注册了
+      serviceId: service-ribbon
+    api-feign:
+      path: /api/feign/**
+      serviceId: service-feign

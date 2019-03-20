@@ -10,6 +10,7 @@
         <module name="serice-feign" />
         <module name="service-hi" />
         <module name="service-ribbon" />
+        <module name="service-zull" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="serice-feign" target="11" />
       <module name="service-hi" target="11" />
       <module name="service-ribbon" target="11" />
+      <module name="service-zull" target="11" />
       <module name="spring-cloud" target="11" />
     </bytecodeTargetLevel>
   </component>

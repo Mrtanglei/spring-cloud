@@ -1,8 +1,8 @@
 package com.lei.tang.servicezull.config;
 
 import javax.servlet.http.HttpServletRequest;
-
 import java.io.IOException;
+import java.math.BigDecimal;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
@@ -56,7 +56,7 @@ public class RibbonZuulFilter extends ZuulFilter {
     }
 
     /**
-     * 可以进行一些逻辑判断控制程序是否继续执行
+     * 可以进行一些逻辑判断控制程序是否继续执行ibbonZuulFilte
      *
      * @return
      * @throws ZuulException
@@ -75,5 +75,9 @@ public class RibbonZuulFilter extends ZuulFilter {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+        System.out.println((new BigDecimal(Math.floor(1.00))).longValue());
     }
 }

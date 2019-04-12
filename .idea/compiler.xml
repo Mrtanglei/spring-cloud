@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="common" />
         <module name="eureka-server" />
         <module name="serice-feign" />
         <module name="service-hi" />
@@ -14,6 +15,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common" target="11" />
       <module name="eureka-server" target="11" />
       <module name="serice-feign" target="11" />
       <module name="service-hi" target="11" />

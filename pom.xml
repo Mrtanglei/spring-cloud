@@ -21,6 +21,7 @@
         <module>service-ribbon</module>
         <module>serice-feign</module>
         <module>service-zull</module>
+        <module>common</module>
     </modules>
 
     <properties>
